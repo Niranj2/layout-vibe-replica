@@ -7,13 +7,13 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
-            <h3 className="text-xl font-bold text-primary mb-4">LeapFrog</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">Marketing Frog</h3>
             <p className="text-muted-foreground">Creating websites that help your business leap ahead of competition.</p>
           </div>
           <div>
             <h3 className="text-xl font-bold text-primary mb-4">Contact</h3>
             <address className="not-italic text-muted-foreground">
-              <p>hello@leapfrog.com</p>
+              <p>hello@marketingfrog.com</p>
               <p>+1 (555) 123-4567</p>
             </address>
           </div>
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-muted mt-12 pt-6 text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} LeapFrog. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Marketing Frog. All rights reserved.</p>
         </div>
       </div>
     </footer>

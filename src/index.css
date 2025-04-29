@@ -5,8 +5,8 @@
 
 @layer base {
   :root {
-    /* Light mode colors */
-    --background: 0 0% 98%;
+    /* Light mode colors - adjusted to blend better with images */
+    --background: 150 15% 96%;
     --foreground: 120 10% 10%;
 
     --card: 0 0% 100%;
@@ -18,7 +18,7 @@
     --primary: 140 70% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 120 20% 92%;
+    --secondary: 150 20% 92%;
     --secondary-foreground: 120 10% 10%;
 
     --muted: 120 10% 90%;
@@ -38,22 +38,22 @@
   }
 
   .dark {
-    --background: 120 100% 10%;
+    --background: 150 25% 8%;
     --foreground: 120 100% 95%;
 
-    --card: 120 100% 15%;
+    --card: 150 25% 12%;
     --card-foreground: 120 100% 95%;
 
-    --popover: 120 100% 10%;
+    --popover: 150 25% 8%;
     --popover-foreground: 120 100% 95%;
 
     --primary: 140 100% 60%;
     --primary-foreground: 120 100% 10%;
 
-    --secondary: 120 60% 20%;
+    --secondary: 150 40% 16%;
     --secondary-foreground: 120 100% 95%;
 
-    --muted: 120 40% 20%;
+    --muted: 150 30% 16%;
     --muted-foreground: 120 40% 80%;
 
     --accent: 30 100% 50%;
@@ -62,9 +62,13 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 120 40% 20%;
-    --input: 120 40% 20%;
+    --border: 150 30% 18%;
+    --input: 150 30% 18%;
     --ring: 140 100% 50%;
+  }
+
+  html {
+    font-family: 'Inter', sans-serif;
   }
 
   body {

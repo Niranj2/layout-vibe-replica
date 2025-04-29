@@ -12,8 +12,8 @@ const Header: React.FC = () => {
     <header className="py-6 px-6 lg:px-12">
       <div className="flex justify-between items-center">
         <div className="text-primary font-bold text-3xl">Marketing Frog</div>
-        <nav className="hidden lg:block">
-          <ul className="flex space-x-8 text-lg">
+        <nav className="hidden lg:block flex-1 mx-8">
+          <ul className="flex justify-center space-x-16 text-lg font-medium">
             <li><a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a></li>
             <li><a href="#stories" className="text-foreground hover:text-primary transition-colors">Success Stories</a></li>
             <li><a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a></li>
