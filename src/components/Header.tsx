@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import MobileNav from './MobileNav';
 import { Button } from './ui/button';
 import { Sun, Moon } from 'lucide-react';
@@ -7,16 +7,27 @@ import { useTheme } from '../hooks/useTheme';
 
 const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      setIsScrolled(scrollPosition > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="py-6 px-6 lg:px-12">
-      <div className="flex justify-between items-center">
-        <div className="text-primary font-bold text-3xl">Marketing Frog</div>
-        <nav className="hidden lg:block flex-1 mx-8">
-          <ul className="flex justify-center space-x-16 text-lg font-medium">
-            <li><a href="#services" className="text-foreground hover:text-primary transition-colors">Services</a></li>
-            <li><a href="#stories" className="text-foreground hover:text-primary transition-colors">Success Stories</a></li>
-            <li><a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a></li>
+    <header className={`fixed top-0 left-0 right-0 py-6 px-6 lg:px-12 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
+      <div className="flex justify-between items-center max-w-7xl mx-auto">
+        <div className="text-white font-bold text-3xl">Marketing Frog</div>
+        <nav className="hidden lg:block flex-1">
+          <ul className="flex justify-center space-x-32 text-lg font-medium">
+            <li><a href="#services" className="text-white hover:text-primary transition-colors">Services</a></li>
+            <li><a href="#stories" className="text-white hover:text-primary transition-colors">Success Stories</a></li>
+            <li><a href="#contact" className="text-white hover:text-primary transition-colors">Contact</a></li>
           </ul>
         </nav>
         <div className="flex items-center gap-4">
@@ -24,7 +35,7 @@ const Header: React.FC = () => {
             variant="ghost" 
             size="icon" 
             onClick={toggleTheme} 
-            className="rounded-full"
+            className="rounded-full text-white"
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
