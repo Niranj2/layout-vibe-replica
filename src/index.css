@@ -38,7 +38,7 @@
     
     /* Custom colors */
     --deep-green: 147 65% 16%;
-    --header-text: 140 70% 45%;
+    --header-text: 120 10% 10%; /* Matching the foreground color for consistency */
   }
 
   .dark {
@@ -96,7 +96,7 @@
   }
   
   .hero-gradient {
-    @apply dark:bg-[#0d432a] bg-[#0d432a];
+    @apply dark:bg-[#0e4129] bg-[#0e4129];
   }
   
   .service-icon {
