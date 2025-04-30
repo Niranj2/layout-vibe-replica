@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           <div className="relative lg:block animate-fade-in">
             <div className="relative h-[450px] flex items-center justify-center">
               <img 
-                src="/lovable-uploads/c753a06d-6f07-4170-b7b6-6f339c711b4e.png" 
+                src="/lovable-uploads/f3102caa-8113-41a3-8fa4-1789a70b3fa1.png" 
                 alt="Marketing Frog Mascot" 
                 className="w-full h-full object-contain absolute transform translate-y-[-20px]"
               />

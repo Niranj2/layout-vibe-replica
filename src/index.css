@@ -38,7 +38,7 @@
     
     /* Custom colors */
     --deep-green: 147 65% 16%;
-    --header-text: 120 10% 10%; /* Matching the foreground color for consistency */
+    --header-text: 211 33% 7%; /* Changed to #0F1915 for better contrast in light mode */
   }
 
   .dark {
