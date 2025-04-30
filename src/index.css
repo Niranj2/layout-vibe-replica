@@ -38,6 +38,7 @@
     
     /* Custom colors */
     --deep-green: 147 65% 16%;
+    --header-text: 140 70% 45%;
   }
 
   .dark {
@@ -71,6 +72,7 @@
     
     /* Custom colors */
     --deep-green: 147 65% 16%;
+    --header-text: 140 100% 60%;
   }
 
   html {
@@ -94,7 +96,7 @@
   }
   
   .hero-gradient {
-    @apply dark:bg-[#0e4329] bg-[#0e4329];
+    @apply dark:bg-[#0d432a] bg-[#0d432a];
   }
   
   .service-icon {

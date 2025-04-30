@@ -9,7 +9,7 @@ const MobileNav: React.FC = () => {
     <div className="lg:hidden">
       <Button 
         variant="ghost" 
-        className="p-0 text-foreground" 
+        className="p-0 text-primary" 
         onClick={() => setIsOpen(!isOpen)}
       >
         <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -36,7 +36,7 @@ const MobileNav: React.FC = () => {
               <li>
                 <a 
                   href="#services" 
-                  className="text-foreground hover:text-primary transition-colors"
+                  className="text-primary hover:text-primary/80 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Services
@@ -45,7 +45,7 @@ const MobileNav: React.FC = () => {
               <li>
                 <a 
                   href="#stories" 
-                  className="text-foreground hover:text-primary transition-colors"
+                  className="text-primary hover:text-primary/80 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Success Stories
@@ -54,7 +54,7 @@ const MobileNav: React.FC = () => {
               <li>
                 <a 
                   href="#contact" 
-                  className="text-foreground hover:text-primary transition-colors"
+                  className="text-primary hover:text-primary/80 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   Contact

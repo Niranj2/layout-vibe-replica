@@ -25,9 +25,9 @@ const Header: React.FC = () => {
         <div className="text-white font-bold text-3xl">Marketing Frog</div>
         <nav className="hidden lg:block flex-1">
           <ul className="flex justify-center space-x-32 text-lg font-medium">
-            <li><a href="#services" className="text-white hover:text-primary transition-colors">Services</a></li>
-            <li><a href="#stories" className="text-white hover:text-primary transition-colors">Success Stories</a></li>
-            <li><a href="#contact" className="text-white hover:text-primary transition-colors">Contact</a></li>
+            <li><a href="#services" className="text-primary hover:text-primary/80 transition-colors">Services</a></li>
+            <li><a href="#stories" className="text-primary hover:text-primary/80 transition-colors">Success Stories</a></li>
+            <li><a href="#contact" className="text-primary hover:text-primary/80 transition-colors">Contact</a></li>
           </ul>
         </nav>
         <div className="flex items-center gap-4">
@@ -35,7 +35,7 @@ const Header: React.FC = () => {
             variant="ghost" 
             size="icon" 
             onClick={toggleTheme} 
-            className="rounded-full text-white"
+            className="rounded-full text-primary"
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
