@@ -1,11 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Light mode colors - adjusted to blend better with images */
-    --background: 150 15% 96%;
+    /* Light mode colors - adjusted for neo-brutalist/luxury feel */
+    --background: 60 10% 98%;
     --foreground: 120 10% 10%;
 
     --card: 0 0% 100%;
@@ -23,7 +26,7 @@
     --muted: 120 10% 90%;
     --muted-foreground: 120 10% 40%;
 
-    --accent: 30 100% 50%;
+    --accent: 225 73% 57%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -59,7 +62,7 @@
     --muted: 150 30% 16%;
     --muted-foreground: 120 40% 80%;
 
-    --accent: 30 100% 50%;
+    --accent: 225 73% 57%;
     --accent-foreground: 120 100% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -76,6 +79,11 @@
 
   html {
     font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.025em;
   }
 
   body {
@@ -100,6 +108,18 @@
   
   .service-icon {
     @apply text-primary bg-secondary/50 p-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .glassmorphism {
+    @apply backdrop-blur-md bg-white/10 border border-white/20;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg;
   }
 }
 

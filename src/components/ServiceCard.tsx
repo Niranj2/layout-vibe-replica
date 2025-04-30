@@ -24,11 +24,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, icon }) => {
   };
 
   return (
-    <div className="flex flex-col items-center animate-slide-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-      <div className="service-icon mb-4">
+    <div 
+      className="flex flex-col items-center animate-slide-up opacity-0 hover-lift" 
+      style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
+    >
+      <div className="service-icon mb-4 glassmorphism hover:bg-accent/5">
         {getIcon()}
       </div>
-      <h3 className="text-foreground text-center">{title}</h3>
+      <h3 className="text-foreground text-center font-space-grotesk font-medium">{title}</h3>
     </div>
   );
 };
