@@ -1,50 +1,34 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Computer, Search, Target, Smartphone } from 'lucide-react';
 
 interface ServiceCardProps {
   title: string;
   icon: 'computer' | 'search' | 'branding' | 'marketing';
-  description?: string;
 }
 
-const ServiceCard: React.FC<ServiceCardProps> = ({ title, icon, description }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  
+const ServiceCard: React.FC<ServiceCardProps> = ({ title, icon }) => {
   const getIcon = () => {
     switch (icon) {
       case 'computer':
-        return <Computer size={36} className="group-hover:text-neon-lime transition-colors" />;
+        return <Computer size={36} />;
       case 'search':
-        return <Search size={36} className="group-hover:text-neon-lime transition-colors" />;
+        return <Search size={36} />;
       case 'branding':
-        return <Target size={36} className="group-hover:text-neon-lime transition-colors" />;
+        return <Target size={36} />;
       case 'marketing':
-        return <Smartphone size={36} className="group-hover:text-neon-lime transition-colors" />;
+        return <Smartphone size={36} />;
       default:
-        return <Computer size={36} className="group-hover:text-neon-lime transition-colors" />;
+        return <Computer size={36} />;
     }
   };
 
   return (
-    <div 
-      className="flex flex-col items-center animate-slide-up opacity-0 group cursor-pointer"
-      style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
-      <div 
-        className={`service-icon mb-4 glassmorphism group-hover:bg-accent/20 transition-all duration-500 ${isHovered ? 'hover-glow' : ''}`}
-      >
+    <div className="flex flex-col items-center animate-slide-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
+      <div className="service-icon mb-4">
         {getIcon()}
       </div>
-      <h3 className="text-foreground text-center font-space-grotesk font-medium mb-2 group-hover:text-neon-lime transition-colors">{title}</h3>
-      
-      {description && isHovered && (
-        <div className="mt-2 max-w-xs text-center text-muted-foreground animate-fade-in">
-          <p>{description}</p>
-        </div>
-      )}
+      <h3 className="text-foreground text-center">{title}</h3>
     </div>
   );
 };
