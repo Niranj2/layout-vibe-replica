@@ -8,8 +8,8 @@
 
 @layer base {
   :root {
-    /* Light mode colors - updated with soft off-white background */
-    --background: 150 30% 96%;
+    /* Light mode colors - updated with clean white background */
+    --background: 0 0% 100%;
     --foreground: 150 25% 10%;
 
     --card: 0 0% 100%;
@@ -21,7 +21,7 @@
     --primary: 140 70% 45%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 150 20% 92%;
+    --secondary: 150 20% 96%;
     --secondary-foreground: 150 25% 10%;
 
     --muted: 150 10% 90%;
@@ -99,8 +99,8 @@
   }
   
   .hero-gradient {
-    @apply bg-[#0E4129];
-    background-image: radial-gradient(circle at 50% 50%, rgba(173, 255, 47, 0.05) 0%, rgba(14, 65, 41, 0) 70%);
+    @apply bg-[#003E2B];
+    background-image: radial-gradient(circle at 50% 50%, rgba(173, 255, 47, 0.05) 0%, rgba(0, 62, 43, 0) 70%);
   }
   
   .service-icon {
