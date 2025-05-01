@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto">
-        <div className={`font-bold text-3xl font-space-grotesk ${theme === 'dark' ? 'text-primary' : 'text-[#0F1915]'}`}>
+        <div className={`font-bold text-3xl font-space-grotesk ${theme === 'dark' ? 'text-neon-lime' : 'text-[#0F1915]'} animate-float`}>
           Marketing Frog
         </div>
         <nav className="hidden lg:block flex-1">
@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             <li>
               <a 
                 href="#services" 
-                className="text-primary hover:text-primary/80 transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-primary hover:after:w-full after:transition-all"
+                className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
               >
                 Services
               </a>
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
             <li>
               <a 
                 href="#stories" 
-                className="text-primary hover:text-primary/80 transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-primary hover:after:w-full after:transition-all"
+                className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
               >
                 Success Stories
               </a>
@@ -52,7 +52,7 @@ const Header: React.FC = () => {
             <li>
               <a 
                 href="#contact" 
-                className="text-primary hover:text-primary/80 transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-primary hover:after:w-full after:transition-all"
+                className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
               >
                 Contact
               </a>
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             variant="ghost" 
             size="icon" 
             onClick={toggleTheme} 
-            className="rounded-full text-primary hover:bg-accent/10"
+            className="rounded-full text-primary hover:bg-accent/10 hover:animate-pulse"
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
