@@ -1,6 +1,10 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 @layer base {
   :root {
@@ -75,7 +79,12 @@
   }
 
   html {
-    font-family: 'Inter', sans-serif;
+    font-family: 'DM Sans', 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
   }
 
   body {
@@ -99,7 +108,31 @@
   }
   
   .service-icon {
-    @apply text-primary bg-secondary/50 p-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110;
+    @apply text-primary bg-secondary/50 p-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-glow;
+  }
+
+  .glass-card {
+    @apply backdrop-blur-md bg-white/10 border border-white/20 shadow-lg;
+  }
+
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(var(--primary), 0.5);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+  }
+  
+  .button-bounce {
+    animation: buttonBounce 1s infinite alternate ease-in-out;
+  }
+  
+  .hover-float {
+    transition: transform 0.3s ease;
+  }
+  
+  .hover-float:hover {
+    transform: translateY(-5px);
   }
 }
 
@@ -116,5 +149,34 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes buttonBounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-5px); }
+}
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--primary), 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(var(--primary), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--primary), 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
   }
 }

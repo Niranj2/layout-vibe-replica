@@ -22,7 +22,7 @@ const Header: React.FC = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 py-6 px-6 lg:px-12 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/90 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
       <div className="flex justify-between items-center max-w-7xl mx-auto">
-        <div className={`font-bold text-3xl ${theme === 'dark' ? 'text-primary' : 'text-[#0F1915]'}`}>Marketing Frog</div>
+        <div className="font-bold text-3xl text-primary">Marketing Frog</div>
         <nav className="hidden lg:block flex-1">
           <ul className="flex justify-center space-x-32 text-lg font-medium">
             <li><a href="#services" className="text-primary hover:text-primary/80 transition-colors">Services</a></li>

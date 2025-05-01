@@ -20,7 +20,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
+        sans: ['DM Sans', 'Inter', 'sans-serif'],
+        heading: ['Space Grotesk', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -85,12 +86,25 @@ export default {
             transform: "translateY(0)",
           },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        pulse: {
+          '0%, 100%': { opacity: '0.6' },
+          '50%': { opacity: '0.9' },
+        }
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-in": "fadeIn 0.8s ease-out forwards",
         "slide-up": "slideUp 0.6s ease-out forwards",
+        "float": "float 3s ease-in-out infinite",
+        "pulse": "pulse 4s ease-in-out infinite",
+      },
+      boxShadow: {
+        glow: '0 0 15px rgba(0, 255, 120, 0.5)',
       },
     },
   },

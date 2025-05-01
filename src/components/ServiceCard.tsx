@@ -1,5 +1,5 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Computer, Search, Target, Smartphone } from 'lucide-react';
 
 interface ServiceCardProps {
@@ -8,6 +8,30 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, icon }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-slide-up');
+          entry.target.classList.remove('opacity-0');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    if (cardRef.current) {
+      observer.observe(cardRef.current);
+    }
+    
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, []);
+
   const getIcon = () => {
     switch (icon) {
       case 'computer':
@@ -24,11 +48,16 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, icon }) => {
   };
 
   return (
-    <div className="flex flex-col items-center animate-slide-up opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>
-      <div className="service-icon mb-4">
-        {getIcon()}
+    <div 
+      ref={cardRef} 
+      className="flex flex-col items-center opacity-0 transform transition-all duration-500 hover:scale-105"
+    >
+      <div className="service-icon mb-4 group">
+        <div className="transform transition-all duration-300 group-hover:scale-110">
+          {getIcon()}
+        </div>
       </div>
-      <h3 className="text-foreground text-center">{title}</h3>
+      <h3 className="text-foreground text-center font-semibold">{title}</h3>
     </div>
   );
 };

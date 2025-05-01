@@ -1,15 +1,34 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import SuccessStory from './SuccessStory';
 
+const categories = ["All", "Startups", "E-commerce", "Tech"];
+
 const Stories: React.FC = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
   return (
     <section id="stories" className="py-20 px-6 lg:px-12 bg-[#0e4129] text-white">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-between mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-white">Marketing Frog Success Stories</h2>
-          <div className="bg-white/10 rounded-full text-white text-sm p-1 w-8 h-8 flex items-center justify-center">
-            All
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 md:mb-0">
+            Marketing Frog Success Stories
+          </h2>
+          
+          <div className="flex space-x-2 overflow-x-auto pb-2">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-4 py-2 rounded-full transition-all ${
+                  activeCategory === category 
+                    ? "bg-white/20 text-white" 
+                    : "bg-transparent text-white/70 hover:text-white"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
           </div>
         </div>
         

@@ -7,14 +7,14 @@ const Hero: React.FC = () => {
     <section className="hero-gradient pt-16 pb-24 px-6 lg:px-12 min-h-[85vh] flex flex-col justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-8 animate-fade-in">
+          <div className="space-y-8">
             <h1 className="text-5xl md:text-7xl font-bold text-primary">
               Your marketing is just one leap away.
             </h1>
             <p className="text-muted-foreground max-w-md text-xl">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
-            <Button className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-7 text-xl rounded-full">
+            <Button className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-7 text-xl rounded-full hover:shadow-glow transition-all duration-300 hover:-translate-y-1">
               Get started today
             </Button>
             <div className="flex items-center space-x-6 pt-6 text-lg text-muted-foreground">
@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
               <span>YXI Factory</span>
             </div>
           </div>
-          <div className="relative lg:block animate-fade-in">
+          <div className="relative lg:block">
             <div className="relative h-[450px] flex items-center justify-center">
               <img 
                 src="/lovable-uploads/f3102caa-8113-41a3-8fa4-1789a70b3fa1.png" 
