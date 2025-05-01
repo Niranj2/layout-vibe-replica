@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto">
-        <div className={`font-bold text-3xl font-space-grotesk ${theme === 'dark' ? 'text-neon-lime' : 'text-[#0F1915]'} animate-float`}>
+        <div className="font-bold text-3xl font-space-grotesk text-[#0F1915]">
           Marketing Frog
         </div>
         <nav className="hidden lg:block flex-1">
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
             variant="ghost" 
             size="icon" 
             onClick={toggleTheme} 
-            className="rounded-full text-primary hover:bg-accent/10 hover:animate-pulse"
+            className="rounded-full text-primary hover:bg-accent/10"
             aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
           >
             {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
