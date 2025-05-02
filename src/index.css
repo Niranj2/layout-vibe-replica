@@ -42,7 +42,7 @@
 
   .dark {
     /* Dark mode colors - keeping deep greens and charcoals */
-    --background: 150 30% 6%;
+    --background: 150 64% 13%; /* #003E2B */
     --foreground: 120 100% 95%;
 
     --card: 150 30% 10%;
@@ -111,6 +111,15 @@
 
   .hover-glow {
     @apply transition-all duration-300 hover:shadow-[0_0_15px_5px_rgba(173,255,47,0.3)];
+  }
+
+  /* Consistent button styles across themes */
+  .btn-neon-lime {
+    @apply bg-neon-lime text-[#003E2B] hover:bg-neon-lime/90 !important;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent text-primary border border-primary hover:bg-primary/10 !important;
   }
 }
 
