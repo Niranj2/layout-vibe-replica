@@ -15,9 +15,14 @@ export const useTheme = () => {
       setTheme(savedTheme);
       document.documentElement.classList.toggle('dark', savedTheme === 'dark');
     } else {
-      setTheme(prefersDark ? 'dark' : 'light');
-      document.documentElement.classList.toggle('dark', prefersDark);
+      // Set dark as default
+      setTheme('dark');
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     }
+
+    // Add transition class for smooth theme changes
+    document.documentElement.classList.add('transition-colors', 'duration-300');
   }, []);
 
   const toggleTheme = () => {

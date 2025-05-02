@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="hero-gradient pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
+    <section className="bg-[#003E2B] dark:bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-40 h-40 rounded-full bg-neon-lime/5 blur-3xl top-1/4 left-1/4"></div>
         <div className="absolute w-60 h-60 rounded-full bg-neon-blue/5 blur-3xl bottom-1/4 right-1/4"></div>

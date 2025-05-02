@@ -8,8 +8,8 @@
 
 @layer base {
   :root {
-    /* Light mode colors - updated with clean white background */
-    --background: 0 0% 100%;
+    /* Light mode colors - soft white/green background */
+    --background: 150 30% 98%;
     --foreground: 150 25% 10%;
 
     --card: 0 0% 100%;
@@ -18,7 +18,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 150 25% 10%;
 
-    --primary: 140 70% 45%;
+    --primary: 140 70% 35%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 150 20% 96%;
@@ -38,26 +38,28 @@
     --ring: 140 70% 45%;
 
     --radius: 0.75rem;
+    
+    --forest-green: 159 97% 12%;
   }
 
   .dark {
-    /* Dark mode colors - keeping deep greens and charcoals */
-    --background: 150 30% 6%;
+    /* Dark mode colors with forest green background */
+    --background: 159 97% 12%;
     --foreground: 120 100% 95%;
 
-    --card: 150 30% 10%;
+    --card: 159 97% 16%;
     --card-foreground: 120 100% 95%;
 
-    --popover: 150 30% 6%;
+    --popover: 159 97% 12%;
     --popover-foreground: 120 100% 95%;
 
     --primary: 140 100% 60%;
-    --primary-foreground: 150 30% 6%;
+    --primary-foreground: 159 97% 12%;
 
-    --secondary: 150 40% 16%;
+    --secondary: 159 97% 18%;
     --secondary-foreground: 120 100% 95%;
 
-    --muted: 150 30% 16%;
+    --muted: 159 97% 20%;
     --muted-foreground: 120 40% 80%;
 
     --accent: 225 73% 57%;
@@ -66,8 +68,8 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 150 30% 18%;
-    --input: 150 30% 18%;
+    --border: 159 97% 22%;
+    --input: 159 97% 22%;
     --ring: 140 100% 50%;
   }
 
@@ -82,10 +84,9 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
     padding-top: 80px;
-    @apply dark; /* Set dark mode as default */
   }
 }
 
@@ -99,7 +100,7 @@
   }
   
   .hero-gradient {
-    @apply bg-[#003E2B];
+    @apply bg-[#003E2B] dark:bg-[#003E2B];
     background-image: radial-gradient(circle at 50% 50%, rgba(173, 255, 47, 0.05) 0%, rgba(0, 62, 43, 0) 70%);
   }
   
@@ -112,7 +113,7 @@
   }
   
   .glassmorphism {
-    @apply backdrop-blur-md bg-white/10 border border-white/20;
+    @apply backdrop-blur-md bg-white/10 dark:bg-white/10 border border-white/20;
   }
   
   .hover-lift {
