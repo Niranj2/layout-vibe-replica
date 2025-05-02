@@ -30,6 +30,18 @@ export const useTheme = () => {
     setTheme(newTheme);
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
     localStorage.setItem('theme', newTheme);
+    
+    // Apply hero section background color consistency
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      if (newTheme === 'dark') {
+        heroSection.classList.add('bg-[#003E2B]');
+        heroSection.classList.remove('bg-background');
+      } else {
+        heroSection.classList.remove('bg-[#003E2B]');
+        heroSection.classList.add('bg-background');
+      }
+    }
   };
 
   return { theme, toggleTheme };

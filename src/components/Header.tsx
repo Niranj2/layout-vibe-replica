@@ -23,12 +23,12 @@ const Header: React.FC = () => {
     <header 
       className={`fixed top-0 left-0 right-0 py-6 px-6 lg:px-12 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'bg-background/90 backdrop-blur-md shadow-md' 
-          : 'bg-transparent'
+          ? 'bg-background/90 dark:bg-[#003E2B]/90 backdrop-blur-md shadow-md' 
+          : 'bg-transparent dark:bg-[#003E2B]'
       }`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto">
-        <div className="font-bold text-3xl font-space-grotesk text-neon-lime dark:text-neon-lime">
+        <div className="font-bold text-3xl font-space-grotesk text-neon-lime">
           Marketing Frog
         </div>
         <nav className="hidden lg:block flex-1">

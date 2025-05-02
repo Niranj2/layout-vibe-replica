@@ -5,19 +5,14 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-[#003E2B] dark:bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-40 h-40 rounded-full bg-neon-lime/5 blur-3xl top-1/4 left-1/4"></div>
-        <div className="absolute w-60 h-60 rounded-full bg-neon-blue/5 blur-3xl bottom-1/4 right-1/4"></div>
-      </div>
-      
+    <section className="hero-section bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-10">
             <h1 className="text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
-            <p className="text-muted-foreground max-w-md text-xl text-balance">
+            <p className="text-muted dark:text-muted-foreground max-w-md text-xl text-balance">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -29,7 +24,7 @@ const Hero: React.FC = () => {
                 See Our Work
               </Button>
             </div>
-            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted dark:text-muted-foreground">
               <span className="font-space-grotesk font-medium">Trusted by</span>
               <span>ABC Corp</span>
               <span>LocalBiz Inc</span>
@@ -38,7 +33,6 @@ const Hero: React.FC = () => {
           </div>
           <div className="relative lg:block">
             <div className="relative h-[450px] flex items-center justify-center">
-              <div className="absolute inset-0 bg-accent/5 rounded-full blur-[100px]"></div>
               <img 
                 src="/lovable-uploads/f3102caa-8113-41a3-8fa4-1789a70b3fa1.png" 
                 alt="Marketing Frog Mascot" 
