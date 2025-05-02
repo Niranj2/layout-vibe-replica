@@ -15,14 +15,9 @@ export const useTheme = () => {
       setTheme(savedTheme);
       document.documentElement.classList.toggle('dark', savedTheme === 'dark');
     } else {
-      // Set dark as default
-      setTheme('dark');
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      setTheme(prefersDark ? 'dark' : 'light');
+      document.documentElement.classList.toggle('dark', prefersDark);
     }
-
-    // Add transition class for smooth theme changes
-    document.documentElement.classList.add('transition-colors', 'duration-300');
   }, []);
 
   const toggleTheme = () => {
@@ -30,18 +25,6 @@ export const useTheme = () => {
     setTheme(newTheme);
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
     localStorage.setItem('theme', newTheme);
-    
-    // Apply hero section background color consistency
-    const heroSection = document.querySelector('.hero-section');
-    if (heroSection) {
-      if (newTheme === 'dark') {
-        heroSection.classList.add('bg-[#003E2B]');
-        heroSection.classList.remove('bg-background');
-      } else {
-        heroSection.classList.remove('bg-[#003E2B]');
-        heroSection.classList.add('bg-background');
-      }
-    }
   };
 
   return { theme, toggleTheme };

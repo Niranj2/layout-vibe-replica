@@ -9,8 +9,8 @@ import Footer from '@/components/Footer';
 import { useTheme } from '@/hooks/useTheme';
 
 const Index: React.FC = () => {
-  // Initialize theme
-  const { theme } = useTheme();
+  // Initialize theme (this ensures the hook runs)
+  useTheme();
   
   const cursorRef = useRef<HTMLDivElement>(null);
   const [cursorHovered, setCursorHovered] = useState(false);
@@ -53,7 +53,7 @@ const Index: React.FC = () => {
   const isMobile = typeof window !== 'undefined' && window.matchMedia('(max-width: 768px)').matches;
 
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+    <div className="min-h-screen bg-background text-foreground">
       {!isMobile && (
         <div 
           ref={cursorRef}

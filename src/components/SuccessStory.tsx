@@ -21,7 +21,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
 
   return (
     <Card 
-      className="bg-card overflow-hidden animate-slide-up opacity-0 backdrop-blur-md border-white/10 dark:border-white/10 group transition-all duration-500" 
+      className="bg-card overflow-hidden animate-slide-up opacity-0 glassmorphism border-white/10 group transition-all duration-500" 
       style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

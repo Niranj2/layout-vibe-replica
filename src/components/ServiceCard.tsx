@@ -34,7 +34,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ title, icon, description }) =
       onMouseLeave={() => setIsHovered(false)}
     >
       <div 
-        className={`service-icon mb-4 bg-white/5 dark:bg-white/10 backdrop-blur-md group-hover:bg-accent/20 transition-all duration-500 ${isHovered ? 'hover-glow' : ''}`}
+        className={`service-icon mb-4 glassmorphism group-hover:bg-accent/20 transition-all duration-500 ${isHovered ? 'hover-glow' : ''}`}
       >
         {getIcon()}
       </div>
