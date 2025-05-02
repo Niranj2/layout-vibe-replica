@@ -85,7 +85,6 @@
     @apply bg-background text-foreground antialiased;
     font-feature-settings: "ss01", "ss02", "cv01", "cv02", "cv03";
     padding-top: 80px;
-    @apply dark; /* Set dark mode as default */
   }
 }
 
@@ -98,11 +97,6 @@
     animation: slideUp 0.6s ease-out forwards;
   }
   
-  .hero-gradient {
-    @apply bg-[#003E2B];
-    background-image: radial-gradient(circle at 50% 50%, rgba(173, 255, 47, 0.05) 0%, rgba(0, 62, 43, 0) 70%);
-  }
-  
   .service-icon {
     @apply text-primary bg-secondary/30 p-6 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110;
   }
@@ -111,22 +105,12 @@
     text-wrap: balance;
   }
   
-  .glassmorphism {
-    @apply backdrop-blur-md bg-white/10 border border-white/20;
-  }
-  
   .hover-lift {
     @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg;
   }
 
   .hover-glow {
     @apply transition-all duration-300 hover:shadow-[0_0_15px_5px_rgba(173,255,47,0.3)];
-  }
-
-  .ambient-bg {
-    background-image: 
-      radial-gradient(circle at 20% 30%, rgba(173, 255, 47, 0.05) 0%, transparent 20%),
-      radial-gradient(circle at 80% 70%, rgba(0, 191, 255, 0.05) 0%, transparent 20%);
   }
 }
 
