@@ -23,8 +23,8 @@ const Header: React.FC = () => {
     <header 
       className={`fixed top-0 left-0 right-0 py-6 px-6 lg:px-12 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'dark:bg-background bg-background/90 backdrop-blur-md shadow-md' 
-          : 'dark:bg-background bg-background/90'
+          ? 'dark:bg-[#003E2B] bg-background/90 backdrop-blur-md shadow-md' 
+          : 'dark:bg-[#003E2B] bg-background/90'
       }`}
     >
       <div className="flex justify-between items-center max-w-7xl mx-auto">

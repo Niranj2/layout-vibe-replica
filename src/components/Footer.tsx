@@ -4,7 +4,9 @@ import { Instagram, Twitter, Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="contact" className="py-20 px-6 lg:px-12 bg-background relative overflow-hidden border-t border-white/10">
+    <footer id="contact" className="py-20 px-6 lg:px-12 bg-background/95 relative overflow-hidden border-t border-white/10">
+      <div className="absolute inset-0 ambient-bg"></div>
+      
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12">
           <div className="md:col-span-5 space-y-6">
@@ -53,6 +55,8 @@ const Footer: React.FC = () => {
           <p>&copy; {new Date().getFullYear()} Marketing Frog. All rights reserved.</p>
         </div>
       </div>
+      
+      <div className="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-t from-neon-lime/5 to-transparent"></div>
     </footer>
   );
 };

@@ -5,7 +5,7 @@ import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-[#003E2B] dark:bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
+    <section className="bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-10">
@@ -16,11 +16,11 @@ const Hero: React.FC = () => {
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-neon-lime !text-background hover:bg-neon-lime/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group">
+              <Button className="bg-neon-lime text-background hover:bg-neon-lime/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group">
                 <span className="relative z-10">Free Consultation</span>
                 <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Button>
-              <Button className="bg-transparent !text-primary border border-primary hover:bg-primary/10 px-8 py-7 text-xl rounded-full">
+              <Button className="bg-transparent text-primary border border-primary hover:bg-primary/10 px-8 py-7 text-xl rounded-full">
                 See Our Work
               </Button>
             </div>
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#services" className="flex flex-col items-center !text-primary hover:text-neon-lime transition-colors">
+        <a href="#services" className="flex flex-col items-center text-primary hover:text-neon-lime transition-colors">
           <span className="mb-2 text-sm">Explore</span>
           <ArrowDown className="h-6 w-6" />
         </a>
