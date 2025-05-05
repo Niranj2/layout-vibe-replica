@@ -20,6 +20,9 @@ const Hero: React.FC = () => {
                 <span className="relative z-10">Free Consultation</span>
                 <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Button>
+              <Button className="bg-transparent text-primary border border-primary hover:bg-primary/10 px-8 py-7 text-xl rounded-full">
+                See Our Work
+              </Button>
             </div>
             <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground">
               <span className="font-space-grotesk font-medium">Trusted by</span>

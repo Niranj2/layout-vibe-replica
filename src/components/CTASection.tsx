@@ -43,9 +43,6 @@ const CTASection: React.FC = () => {
           <Button className="bg-neon-lime text-background hover:bg-neon-lime/90 px-10 py-7 text-xl rounded-full animate-pulse">
             Get a free consultation
           </Button>
-          <Button className="bg-transparent text-primary border border-primary hover:bg-primary/10 px-10 py-7 text-xl rounded-full">
-            See our work
-          </Button>
         </div>
       </div>
 
