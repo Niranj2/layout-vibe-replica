@@ -2,13 +2,13 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SuccessStory from './SuccessStory';
 
-type FilterCategory = 'All' | 'E-commerce' | 'Tech' | 'Local';
+type FilterCategory = 'All' | 'E-commerce' | 'Tech' | 'Consulting';
 
 const Stories: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<FilterCategory>('All');
   const sectionRef = useRef<HTMLElement>(null);
 
-  const filters: FilterCategory[] = ['All', 'E-commerce', 'Tech', 'Local'];
+  const filters: FilterCategory[] = ['All', 'Tech', 'Consulting', 'E-commerce'];
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -59,18 +59,22 @@ const Stories: React.FC = () => {
         
         <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-8">
           <SuccessStory 
-            title="Local Cafes" 
-            subtitle="Oming Roublach in 5 Morfne" 
-            description="Website rebuild and strategic content optimization resulted in a significant boost to search visibility and customer engagement."
-            author="ViewChek Salon"
-            image="/placeholder.svg"
+            title="🟠 Kernel – Tech" 
+            subtitle="India's Simplest GST Billing Solution" 
+            description="Kernel needed a clear, compelling online presence to stand out in India's competitive SaaS space. We helped shape their digital identity with a sleek landing page and strong brand messaging, positioning them as a go-to solution for simple and effective GST billing."
+            author="Digital India's Digital Billing"
+            image="/lovable-uploads/70ce251f-81cb-4c4e-8544-38d3059e8964.png"
+            link="https://kernel-marketingfrog.netlify.app/"
+            color="bg-green-500/10"
           />
           <SuccessStory 
-            title="Roofing Company" 
-            subtitle="Sees growth by case in Lealls" 
-            description="Your marketing for the special solution service resulted in doubling of new customers and high retention."
-            author="Yloo Case Study"
-            image="/placeholder.svg"
+            title="🟣 MuchMagic – Consulting Services" 
+            subtitle="International Consulting Services" 
+            description="MuchMagic partnered with us to elevate their global brand presence. Through a complete rebrand—including a refined website, messaging strategy, and visual identity—we helped them project the confidence and clarity needed to connect with international clients."
+            author="Global Consulting"
+            image="/lovable-uploads/48fcd1d7-6800-4cfb-a29b-d75f3b31cd2f.png"
+            link="https://sobhanajm.com/"
+            color="bg-purple-500/10"
           />
         </div>
       </div>
