@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Instagram, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Instagram, X, Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
             <p className="text-muted-foreground max-w-md">Creating websites that help your business leap ahead of competition with cutting-edge digital marketing strategies.</p>
             <div className="flex space-x-4">
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary hover:text-neon-lime hover:bg-white/20 transition-all group">
-                <Twitter size={18} className="group-hover:animate-pulse" />
+                <X size={18} className="group-hover:animate-pulse" />
               </a>
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary hover:text-neon-lime hover:bg-white/20 transition-all group">
                 <Instagram size={18} className="group-hover:animate-pulse" />
