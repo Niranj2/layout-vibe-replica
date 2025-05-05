@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 
 interface SuccessStoryProps {
@@ -21,8 +21,6 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
   link,
   color = 'bg-neon-lime/10' // Default color
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   const CardWrapper = ({ children }: { children: React.ReactNode }) => {
     return link ? (
       <a href={link} target="_blank" rel="noopener noreferrer" className="block">
@@ -36,18 +34,16 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
   return (
     <CardWrapper>
       <Card 
-        className={`bg-card overflow-hidden animate-slide-up opacity-0 glassmorphism border-white/10 group transition-all duration-500 ${link ? 'cursor-pointer' : ''}`} 
+        className={`bg-card overflow-hidden animate-slide-up opacity-0 glassmorphism border-white/10 group transition-all duration-300 ease-in-out ${link ? 'cursor-pointer' : ''} hover:translate-y-[-5px] hover:shadow-lg`} 
         style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
       >
         <div className="grid md:grid-cols-3">
           <div className="md:col-span-1 overflow-hidden relative">
-            <div className={`absolute inset-0 ${color} opacity-0 transition-opacity duration-500 z-10 ${isHovered ? 'opacity-100' : ''}`}></div>
+            <div className={`absolute inset-0 ${color} opacity-0 group-hover:opacity-20 transition-opacity duration-300 z-10`}></div>
             <img 
               src={image} 
               alt={title} 
-              className={`h-full w-full object-cover aspect-video md:aspect-auto transition-all duration-500 ${isHovered ? 'scale-110' : 'scale-100'}`}
+              className="h-full w-full object-cover aspect-video md:aspect-auto transition-transform duration-300 group-hover:scale-105"
             />
           </div>
           <div className="md:col-span-2 p-6">
