@@ -9,16 +9,19 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-10">
-            <h1 className="hero-heading">
+            <h1 className="text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
-            <p className="hero-paragraph">
+            <p className="text-muted-foreground max-w-md text-xl text-balance">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="hero-button-primary">
+              <Button className="bg-neon-lime text-background hover:bg-neon-lime/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group">
                 <span className="relative z-10">Free Consultation</span>
                 <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
+              </Button>
+              <Button className="bg-transparent text-primary border border-primary hover:bg-primary/10 px-8 py-7 text-xl rounded-full">
+                See Our Work
               </Button>
             </div>
             <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground">

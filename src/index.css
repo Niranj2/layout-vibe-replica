@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -110,19 +111,6 @@
 
   .hover-glow {
     @apply transition-all duration-300 hover:shadow-[0_0_15px_5px_rgba(173,255,47,0.3)];
-  }
-
-  /* Hero section text consistency between themes */
-  .hero-heading {
-    @apply text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight;
-  }
-  
-  .hero-paragraph {
-    @apply text-muted-foreground max-w-md text-xl text-balance;
-  }
-  
-  .hero-button-primary {
-    @apply bg-neon-lime text-[#0B1410] hover:bg-neon-lime/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group;
   }
 }
 
