@@ -32,8 +32,8 @@ const Header: React.FC = () => {
           Marketing Frog
         </div>
         <div className="flex items-center">
-          <nav className="hidden lg:block">
-            <ul className="flex space-x-12 text-lg font-medium">
+          <nav className="hidden md:block">
+            <ul className="flex space-x-8 lg:space-x-12 text-lg font-medium">
               <li>
                 <a 
                   href="#services" 

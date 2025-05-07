@@ -12,7 +12,7 @@ const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
-            <p className="text-muted-foreground max-w-md text-xl text-balance">
+            <p className="text-muted-foreground text-xl text-balance dark:text-muted-foreground">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -26,9 +26,8 @@ const Hero: React.FC = () => {
             </div>
             <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground">
               <span className="font-space-grotesk font-medium">Trusted by</span>
-              <span>ABC Corp</span>
-              <span>LocalBiz Inc</span>
-              <span>YXI Factory</span>
+              <span>Kernel</span>
+              <span>MuchMagic</span>
             </div>
           </div>
           <div className="relative lg:block">
