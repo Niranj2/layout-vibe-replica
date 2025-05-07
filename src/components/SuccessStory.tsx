@@ -43,7 +43,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
             <img 
               src={image} 
               alt={title} 
-              className="h-full w-full object-cover aspect-video md:aspect-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-full w-full object-contain md:object-contain aspect-video md:aspect-auto transition-transform duration-300 group-hover:scale-105"
             />
           </div>
           <div className="md:col-span-2 p-6">

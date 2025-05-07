@@ -31,45 +31,47 @@ const Header: React.FC = () => {
         <div className="font-bold text-3xl font-space-grotesk text-neon-lime">
           Marketing Frog
         </div>
-        <nav className="hidden lg:block flex-1">
-          <ul className="flex justify-center space-x-32 text-lg font-medium">
-            <li>
-              <a 
-                href="#services" 
-                className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#stories" 
-                className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
-              >
-                Success Stories
-              </a>
-            </li>
-            <li>
-              <a 
-                href="#contact" 
-                className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="flex items-center gap-4">
-          <Button 
-            variant="ghost" 
-            size="icon" 
-            onClick={toggleTheme} 
-            className="rounded-full text-primary hover:bg-accent/10"
-            aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-          >
-            {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-          </Button>
-          <MobileNav />
+        <div className="flex items-center">
+          <nav className="hidden lg:block">
+            <ul className="flex space-x-12 text-lg font-medium">
+              <li>
+                <a 
+                  href="#services" 
+                  className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
+                >
+                  Services
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#stories" 
+                  className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
+                >
+                  Success Stories
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="#contact" 
+                  className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div className="flex items-center gap-4 ml-6">
+            <Button 
+              variant="ghost" 
+              size="icon" 
+              onClick={toggleTheme} 
+              className="rounded-full text-primary hover:bg-accent/10"
+              aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+            >
+              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
+            </Button>
+            <MobileNav />
+          </div>
         </div>
       </div>
     </header>
