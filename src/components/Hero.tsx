@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
-            <p className="text-muted-foreground dark:text-muted-foreground text-xl text-balance">
+            <p className="text-[#9CA3AF] text-xl text-balance">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
             <div className="flex flex-wrap gap-4">
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                 See Our Work
               </Button>
             </div>
-            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground dark:text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#9CA3AF]">
               <span className="font-space-grotesk font-medium">Trusted by</span>
               <span>Kernel</span>
               <span>MuchMagic</span>
