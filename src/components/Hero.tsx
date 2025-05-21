@@ -20,22 +20,22 @@ const Hero: React.FC = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
-            <p className="text-muted-foreground dark:text-muted-foreground text-xl text-balance">
+            <p className="text-[#9CA3AF] text-xl text-balance">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-neon-lime text-[#0B1410] hover:bg-neon-lime/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group">
+              <Button className="bg-[#ADFF2F] text-[#0B1410] hover:bg-[#ADFF2F]/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group">
                 <span className="relative z-10">Free Consultation</span>
                 <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Button>
               <Button 
-                className="bg-transparent text-primary dark:text-primary border border-primary dark:border-primary hover:bg-primary/10 dark:hover:bg-primary/10 px-8 py-7 text-xl rounded-full"
+                className="bg-transparent text-[#ADFF2F] border border-[#ADFF2F] hover:bg-[#ADFF2F]/10 px-8 py-7 text-xl rounded-full"
                 onClick={scrollToStories}
               >
                 See Our Work
               </Button>
             </div>
-            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground dark:text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#9CA3AF]">
               <span className="font-space-grotesk font-medium">Trusted by</span>
               <span>Kernel</span>
               <span>MuchMagic</span>
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
       </div>
       
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <a href="#services" className="flex flex-col items-center text-primary hover:text-neon-lime transition-colors">
+        <a href="#services" className="flex flex-col items-center text-[#ADFF2F] hover:text-neon-lime transition-colors">
           <span className="mb-2 text-sm">Explore</span>
           <ArrowDown className="h-6 w-6" />
         </a>
