@@ -4,6 +4,14 @@ import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
+  const scrollToStories = (e: React.MouseEvent) => {
+    e.preventDefault();
+    const storiesSection = document.getElementById('stories');
+    if (storiesSection) {
+      storiesSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full relative z-10">
@@ -20,7 +28,10 @@ const Hero: React.FC = () => {
                 <span className="relative z-10">Free Consultation</span>
                 <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Button>
-              <Button className="bg-transparent text-primary dark:text-primary border border-primary dark:border-primary hover:bg-primary/10 dark:hover:bg-primary/10 px-8 py-7 text-xl rounded-full">
+              <Button 
+                className="bg-transparent text-primary dark:text-primary border border-primary dark:border-primary hover:bg-primary/10 dark:hover:bg-primary/10 px-8 py-7 text-xl rounded-full"
+                onClick={scrollToStories}
+              >
                 See Our Work
               </Button>
             </div>
