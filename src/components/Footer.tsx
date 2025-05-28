@@ -1,5 +1,6 @@
+
 import React from 'react';
-import { X, Instagram, Linkedin, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -11,20 +12,6 @@ const Footer: React.FC = () => {
           <div className="md:col-span-5 space-y-6">
             <h3 className="text-3xl font-bold text-neon-lime mb-4 font-space-grotesk animate-float">Marketing Frog</h3>
             <p className="text-muted-foreground max-w-md">Creating websites that help your business leap ahead of competition with cutting-edge digital marketing strategies.</p>
-            <div className="flex space-x-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary hover:text-neon-lime hover:bg-white/20 transition-all group">
-                <X size={18} className="group-hover:animate-pulse" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary hover:text-neon-lime hover:bg-white/20 transition-all group">
-                <Instagram size={18} className="group-hover:animate-pulse" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary hover:text-neon-lime hover:bg-white/20 transition-all group">
-                <Linkedin size={18} className="group-hover:animate-pulse" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center text-primary hover:text-neon-lime hover:bg-white/20 transition-all group">
-                <Mail size={18} className="group-hover:animate-pulse" />
-              </a>
-            </div>
           </div>
           
           <div className="md:col-span-3">
@@ -44,8 +31,7 @@ const Footer: React.FC = () => {
                 <Mail size={16} className="mr-2 text-neon-lime" />
                 hello@marketingfrog.com
               </p>
-              <p className="text-muted-foreground">+1 (555) 123-4567</p>
-              <p className="text-muted-foreground">123 Digital Lane<br />Web City, IN 12345</p>
+              <p className="text-muted-foreground">Victoria, British Columbia, Canada</p>
             </address>
           </div>
         </div>
