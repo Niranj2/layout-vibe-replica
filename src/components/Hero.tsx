@@ -36,8 +36,8 @@ const Hero: React.FC = () => {
               </Button>
             </div>
             
-            {/* Mobile image - shown only on mobile, centered and positioned after buttons */}
-            <div className="lg:hidden relative h-[300px] flex items-center justify-center">
+            {/* Mobile image - shown only on mobile, positioned slightly to the left */}
+            <div className="lg:hidden relative h-[300px] flex items-center justify-start pl-4">
               <img 
                 src="/lovable-uploads/f3102caa-8113-41a3-8fa4-1789a70b3fa1.png" 
                 alt="Marketing Frog Mascot" 
@@ -45,7 +45,7 @@ const Hero: React.FC = () => {
               />
             </div>
             
-            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#9CA3AF]">
+            <div className="flex flex-wrap items-center gap-6 pt-2 text-lg text-muted-foreground dark:text-muted-foreground">
               <span className="font-space-grotesk font-medium">Trusted by</span>
               <span>Kernel</span>
               <span>MuchMagic</span>
