@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
           <div className="relative lg:block">
             <div className="relative h-[450px] flex items-center justify-center">
               <img 
-                src="/lovable-uploads/b1cc61e4-8961-49ed-939e-f09cce5399dd.png" 
+                src="/lovable-uploads/9a7bd3ee-2ce4-4052-b81b-96262521fe42.png" 
                 alt="Marketing Frog Mascot" 
                 className="w-full h-full object-contain absolute"
               />
