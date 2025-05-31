@@ -16,8 +16,7 @@ const Hero: React.FC = () => {
     <section className="bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Text content - order changes on mobile */}
-          <div className="space-y-10 order-2 lg:order-1">
+          <div className="space-y-10">
             <h1 className="text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
@@ -36,16 +35,13 @@ const Hero: React.FC = () => {
                 See Our Work
               </Button>
             </div>
-            {/* "Trusted by" section - only shows on larger screens in this position */}
-            <div className="hidden lg:flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground dark:text-muted-foreground">
+            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-muted-foreground dark:text-muted-foreground">
               <span className="font-space-grotesk font-medium">Trusted by</span>
               <span>Kernel</span>
               <span>MuchMagic</span>
             </div>
           </div>
-          
-          {/* Image section - order changes on mobile */}
-          <div className="relative lg:block order-1 lg:order-2">
+          <div className="relative lg:block">
             <div className="relative h-[450px] flex items-center justify-center">
               <img 
                 src="/lovable-uploads/9a7bd3ee-2ce4-4052-b81b-96262521fe42.png" 
@@ -54,13 +50,6 @@ const Hero: React.FC = () => {
               />
             </div>
           </div>
-        </div>
-        
-        {/* "Trusted by" section for mobile - appears below image */}
-        <div className="flex lg:hidden flex-wrap items-center gap-6 pt-8 text-lg text-muted-foreground dark:text-muted-foreground justify-center">
-          <span className="font-space-grotesk font-medium">Trusted by</span>
-          <span>Kernel</span>
-          <span>MuchMagic</span>
         </div>
       </div>
       
