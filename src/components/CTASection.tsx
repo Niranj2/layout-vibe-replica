@@ -36,11 +36,11 @@ const CTASection: React.FC = () => {
       
       <div className="max-w-6xl mx-auto text-center relative z-10">
         <h2 className="text-4xl md:text-6xl font-bold text-neon-lime mb-8 animate-slide-up opacity-0" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>Ready to make the leap?</h2>
-        <p className="text-muted-foreground max-w-2xl mx-auto mb-10 text-xl animate-slide-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+        <p className="text-[#CCE6CC] max-w-2xl mx-auto mb-10 text-xl animate-slide-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
           Join hundreds of businesses that have transformed their online presence with Marketing Frog.
         </p>
         <div className="flex flex-wrap justify-center gap-6 mt-10">
-          <Button className="bg-neon-lime text-background hover:bg-neon-lime/90 px-10 py-7 text-xl rounded-full animate-pulse">
+          <Button className="bg-neon-lime text-[#0B1410] hover:bg-neon-lime/90 px-10 py-7 text-xl rounded-full animate-pulse">
             Get a free consultation
           </Button>
         </div>
