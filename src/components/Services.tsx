@@ -36,7 +36,7 @@ const Services: React.FC = () => {
             Hop on to see how we can help
             <span className="inline-block bg-neon-lime text-background text-sm rounded-full p-1 w-6 h-6 flex items-center justify-center animate-float">hi</span>
           </h2>
-          <p className="text-xl text-neon-lime dark:text-muted-foreground animate-slide-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
+          <p className="text-xl text-muted-foreground animate-slide-up opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>
             Our specialized services are designed to take your brand to the next level with strategic marketing that delivers measurable results.
           </p>
         </div>
