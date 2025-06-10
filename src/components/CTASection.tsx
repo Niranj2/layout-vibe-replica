@@ -40,7 +40,10 @@ const CTASection: React.FC = () => {
           Join hundreds of businesses that have transformed their online presence with Marketing Frog.
         </p>
         <div className="flex flex-wrap justify-center gap-6 mt-10">
-          <Button className="bg-neon-lime text-[#0B1410] hover:bg-neon-lime/90 px-10 py-7 text-xl rounded-full animate-pulse">
+          <Button 
+            className="bg-neon-lime text-[#0B1410] hover:bg-neon-lime/90 px-10 py-7 text-xl rounded-full animate-pulse"
+            onClick={() => window.open('https://calendly.com/hello-marketingfrog/marketing-frog-30-minute-consultation', '_blank')}
+          >
             Get a free consultation
           </Button>
         </div>

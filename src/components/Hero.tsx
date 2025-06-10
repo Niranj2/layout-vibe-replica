@@ -17,14 +17,17 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-10">
-            <h1 className="text-5xl md:text-7xl font-bold text-neon-lime text-balance leading-tight">
+            <h1 className="text-5xl md:text-7xl font-bold text-[#ADFF2F] text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
             <p className="text-[#CCE6CC] text-xl text-balance">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button className="bg-neon-lime text-[#0B1410] hover:bg-neon-lime/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group">
+              <Button 
+                className="bg-[#ADFF2F] text-[#0B1410] hover:bg-[#ADFF2F]/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group"
+                onClick={() => window.open('https://calendly.com/hello-marketingfrog/marketing-frog-30-minute-consultation', '_blank')}
+              >
                 <span className="relative z-10">Free Consultation</span>
                 <span className="absolute inset-0 bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300"></span>
               </Button>
