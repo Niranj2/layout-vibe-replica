@@ -56,7 +56,7 @@ const Stories: React.FC = () => {
             color="bg-purple-500/10"
           />
           <SuccessStory 
-            title="Bankingeorgia" 
+            title="Bank in Georgia" 
             subtitle="Modern Digital Banking for the Next Generation" 
             description="Bankingeorgia.com partnered with us to reimagine their digital banking platform for a new generation of users. We crafted a modern interface with seamless user flows, improved accessibility, and trust-building messaging — positioning Bankingeorgia as a leader in Georgia's fast-evolving fintech space."
             author="Fintech & Digital Experience"
