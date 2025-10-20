@@ -10,6 +10,7 @@ interface SuccessStoryProps {
   image: string;
   link?: string;
   color?: string;
+  titleColor?: string;
 }
 
 const SuccessStory: React.FC<SuccessStoryProps> = ({
@@ -19,7 +20,8 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
   author,
   image,
   link,
-  color = 'bg-neon-lime/10' // Default color
+  color = 'bg-neon-lime/10', // Default color
+  titleColor = 'text-neon-lime' // Default title color
 }) => {
   const CardWrapper = ({ children }: { children: React.ReactNode }) => {
     return link ? (
@@ -48,7 +50,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
           </div>
           <div className="md:col-span-2 p-6">
             <CardHeader className="p-0 pb-4">
-              <CardTitle className="text-xl font-bold text-neon-lime mb-1 font-space-grotesk group-hover:translate-x-1 transition-transform duration-300">{title}</CardTitle>
+              <CardTitle className={`text-xl font-bold ${titleColor} mb-1 font-space-grotesk group-hover:translate-x-1 transition-transform duration-300`}>{title}</CardTitle>
               <CardDescription className="text-foreground text-lg">{subtitle}</CardDescription>
             </CardHeader>
             <CardContent className="p-0 pb-4">

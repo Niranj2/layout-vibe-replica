@@ -72,6 +72,7 @@ const Stories: React.FC = () => {
             image="/lovable-uploads/astroport.png"
             link="https://astroport.xyz/"
             color="bg-cyan-500/10"
+            titleColor="text-purple-500"
           />
         </div>
       </div>
