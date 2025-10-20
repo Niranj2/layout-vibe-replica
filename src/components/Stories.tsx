@@ -56,12 +56,12 @@ const Stories: React.FC = () => {
             color="bg-purple-500/10"
           />
           <SuccessStory 
-            title="BankingGeorgia" 
+            title="Bankingeorgia" 
             subtitle="Modern Digital Banking for the Next Generation" 
-            description="BankingGeorgia.com partnered with us to reimagine their digital banking platform for a new generation of users. We crafted a modern interface with seamless user flows, improved accessibility, and trust-building messaging — positioning BankingGeorgia as a leader in Georgia's fast-evolving fintech space."
+            description="Bankingeorgia.com partnered with us to reimagine their digital banking platform for a new generation of users. We crafted a modern interface with seamless user flows, improved accessibility, and trust-building messaging — positioning Bankingeorgia as a leader in Georgia's fast-evolving fintech space."
             author="Fintech & Digital Experience"
-            image="/lovable-uploads/bankinggeorgia-placeholder.png"
-            link="https://bankinggeorgia.com/"
+            image="/lovable-uploads/bankingeorgia.png"
+            link="https://bankingeorgia.com/"
             color="bg-blue-500/10"
           />
           <SuccessStory 
@@ -69,7 +69,7 @@ const Stories: React.FC = () => {
             subtitle="Pioneering Decentralized Finance Infrastructure" 
             description="Astroport.xyz collaborated with us to elevate their DeFi brand identity and improve user engagement across their ecosystem. Through an optimized landing experience, unified visual language, and clear value communication, we helped strengthen credibility and adoption within the global Web3 community."
             author="Web3 & Blockchain Strategy"
-            image="/lovable-uploads/astroport-placeholder.png"
+            image="/lovable-uploads/astroport.png"
             link="https://astroport.xyz/"
             color="bg-cyan-500/10"
           />
