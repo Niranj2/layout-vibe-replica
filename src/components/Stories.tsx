@@ -54,6 +54,7 @@ const Stories: React.FC = () => {
             image="/lovable-uploads/48fcd1d7-6800-4cfb-a29b-d75f3b31cd2f.png"
             link="https://sobhanajm.com/"
             color="bg-purple-500/10"
+            titleColor="text-[#17AABE]"
           />
           <SuccessStory 
             title="Bank in Georgia" 
@@ -63,7 +64,7 @@ const Stories: React.FC = () => {
             image="/lovable-uploads/bankingeorgia.png"
             link="https://bankingeorgia.com/"
             color="bg-blue-500/10"
-            titleColor="text-[hsl(0,100%,50%)]"
+            titleColor="text-[#CCE6CC]"
           />
           <SuccessStory 
             title="Astroport" 
