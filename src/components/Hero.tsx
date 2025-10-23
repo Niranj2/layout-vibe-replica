@@ -38,12 +38,12 @@ const Hero: React.FC = () => {
                 See Our Work
               </Button>
             </div>
-            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#CCE6CC]">
-              <span className="font-space-grotesk font-medium">Trusted by</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>Kernel</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>MuchMagic</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>Astroport</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>Bank in Georgia</span>
+            <div className="flex flex-nowrap items-center justify-center gap-4 md:gap-6 pt-6 text-base md:text-lg overflow-x-auto scrollbar-hide">
+              <span className="font-space-grotesk font-medium text-[#CCE6CC] whitespace-nowrap">Trusted by</span>
+              <span className="animate-fade-in opacity-0 text-[#CCE6CC] whitespace-nowrap" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>Kernel</span>
+              <span className="animate-fade-in opacity-0 text-[#17AABE] whitespace-nowrap" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>MuchMagic</span>
+              <span className="animate-fade-in opacity-0 text-[#CCE6CC] whitespace-nowrap" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>Astroport</span>
+              <span className="animate-fade-in opacity-0 text-[#CCE6CC] whitespace-nowrap" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>Bank in Georgia</span>
             </div>
           </div>
           <div className="relative lg:block">
