@@ -52,7 +52,9 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a 
-                  href="#contact" 
+                  href="https://calendly.com/hello-marketingfrog/marketing-frog-30-minute-consultation" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
                 >
                   Contact

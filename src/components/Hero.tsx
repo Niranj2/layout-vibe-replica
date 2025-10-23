@@ -40,10 +40,10 @@ const Hero: React.FC = () => {
             </div>
             <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#CCE6CC]">
               <span className="font-space-grotesk font-medium">Trusted by</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>Kernel</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>MuchMagic</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>Astroport</span>
-              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>Bank in Georgia</span>
+              <span className="text-[#17AABE] animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>MuchMagic</span>
+              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>Bank in Georgia</span>
+              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>Kernel</span>
+              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>Astroport</span>
             </div>
           </div>
           <div className="relative lg:block">
@@ -52,6 +52,7 @@ const Hero: React.FC = () => {
                 src="/lovable-uploads/9a7bd3ee-2ce4-4052-b81b-96262521fe42.png" 
                 alt="Marketing Frog Mascot" 
                 className="w-full h-full object-contain absolute"
+                loading="lazy"
               />
             </div>
           </div>
