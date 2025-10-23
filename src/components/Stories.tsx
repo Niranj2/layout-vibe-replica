@@ -38,15 +38,6 @@ const Stories: React.FC = () => {
         
         <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-8">
           <SuccessStory 
-            title="Kernel" 
-            subtitle="India's Simplest GST Billing Solution" 
-            description="Kernel needed a clear, compelling online presence to stand out in India's competitive SaaS space. We helped shape their digital identity with a sleek landing page and strong brand messaging, positioning them as a go-to solution for simple and effective GST billing."
-            author="Digital India's Digital Billing"
-            image="/lovable-uploads/70ce251f-81cb-4c4e-8544-38d3059e8964.png"
-            link="https://kernel-marketingfrog.netlify.app/"
-            color="bg-green-500/10"
-          />
-          <SuccessStory 
             title="MuchMagic" 
             subtitle="International Consulting Services" 
             description="MuchMagic partnered with us to elevate their global brand presence. Through a complete rebrand—including a refined website, messaging strategy, and visual identity—we helped them project the confidence and clarity needed to connect with international clients."
@@ -65,6 +56,15 @@ const Stories: React.FC = () => {
             link="https://bankingeorgia.com/"
             color="bg-blue-500/10"
             titleColor="text-white"
+          />
+          <SuccessStory 
+            title="Kernel" 
+            subtitle="India's Simplest GST Billing Solution" 
+            description="Kernel needed a clear, compelling online presence to stand out in India's competitive SaaS space. We helped shape their digital identity with a sleek landing page and strong brand messaging, positioning them as a go-to solution for simple and effective GST billing."
+            author="Digital India's Digital Billing"
+            image="/lovable-uploads/70ce251f-81cb-4c4e-8544-38d3059e8964.png"
+            link="https://kernel-marketingfrog.netlify.app/"
+            color="bg-green-500/10"
           />
           <SuccessStory 
             title="Astroport" 
