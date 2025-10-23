@@ -64,7 +64,7 @@ const Stories: React.FC = () => {
             image="/lovable-uploads/bankingeorgia.png"
             link="https://bankingeorgia.com/"
             color="bg-blue-500/10"
-            titleColor="text-[#CCE6CC]"
+            titleColor="text-white"
           />
           <SuccessStory 
             title="Astroport" 
