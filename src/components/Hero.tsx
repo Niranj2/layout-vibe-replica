@@ -40,8 +40,10 @@ const Hero: React.FC = () => {
             </div>
             <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#CCE6CC]">
               <span className="font-space-grotesk font-medium">Trusted by</span>
-              <span>Kernel</span>
-              <span>MuchMagic</span>
+              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>Kernel</span>
+              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>MuchMagic</span>
+              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>Astroport</span>
+              <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.5s', animationFillMode: 'forwards' }}>Bank in Georgia</span>
             </div>
           </div>
           <div className="relative lg:block">
