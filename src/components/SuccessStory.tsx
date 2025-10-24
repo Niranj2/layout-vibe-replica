@@ -39,22 +39,22 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
         className={`h-full flex flex-col bg-card overflow-hidden animate-slide-up opacity-0 glassmorphism border-white/10 group transition-all duration-300 ease-in-out ${link ? 'cursor-pointer' : ''} hover:translate-y-[-5px] hover:shadow-lg`} 
         style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
       >
-        <div className="grid md:grid-cols-3 h-full">
-          <div className="md:col-span-1 overflow-hidden relative">
+        <div className="grid md:grid-cols-3 h-full items-start">
+          <div className="md:col-span-1 overflow-hidden relative flex items-center justify-center md:h-full">
             <div className={`absolute inset-0 ${color} opacity-0 group-hover:opacity-20 transition-opacity duration-300 z-10`}></div>
             <img 
               src={image} 
               alt={title} 
-              className="h-full w-full object-contain md:object-contain aspect-video md:aspect-auto transition-transform duration-300 group-hover:scale-105"
+              className="h-full w-full object-contain aspect-video md:aspect-auto transition-transform duration-300 group-hover:scale-105"
             />
           </div>
           <div className="md:col-span-2 p-6 flex flex-col">
-            <CardHeader className="p-0 pb-4">
-              <CardTitle className={`text-xl font-bold ${titleColor} mb-1 font-space-grotesk group-hover:translate-x-1 transition-transform duration-300`}>{title}</CardTitle>
-              <CardDescription className="text-foreground text-lg">{subtitle}</CardDescription>
+            <CardHeader className="p-0 mb-4">
+              <CardTitle className={`text-xl font-bold ${titleColor} mb-2 font-space-grotesk leading-tight group-hover:translate-x-1 transition-transform duration-300`}>{title}</CardTitle>
+              <CardDescription className="text-foreground text-lg leading-snug">{subtitle}</CardDescription>
             </CardHeader>
-            <CardContent className="p-0 pb-4 flex-grow">
-              <p className="text-muted-foreground">{description}</p>
+            <CardContent className="p-0 mb-4 flex-grow">
+              <p className="text-muted-foreground leading-relaxed">{description}</p>
             </CardContent>
             <CardFooter className="p-0 mt-auto">
               <span className="text-accent text-sm font-medium flex items-center gap-2">
