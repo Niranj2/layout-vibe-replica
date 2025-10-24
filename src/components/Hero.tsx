@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
               </Button>
             </div>
             <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#CCE6CC]">
-              <span className="font-space-grotesk font-medium">Trusted by</span>
+              <span className="font-space-grotesk font-bold">Trusted by</span>
               <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>MuchMagic</span>
               <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>Bank in Georgia</span>
               <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.4s', animationFillMode: 'forwards' }}>Kernel</span>
