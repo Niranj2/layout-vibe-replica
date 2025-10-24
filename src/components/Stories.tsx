@@ -36,7 +36,7 @@ const Stories: React.FC = () => {
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6 animate-slide-up opacity-0" style={{ animationDelay: '0.1s', animationFillMode: 'forwards' }}>Marketing Frog Success Stories</h2>
         </div>
         
-        <div className="grid md:grid-cols-1 xl:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 items-stretch">
           <SuccessStory 
             title="MuchMagic" 
             subtitle="International Consulting Services" 
