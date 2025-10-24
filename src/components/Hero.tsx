@@ -16,14 +16,14 @@ const Hero: React.FC = () => {
     <section className="bg-[#003E2B] pt-16 pb-24 px-6 lg:px-12 min-h-[100vh] flex flex-col justify-center relative overflow-hidden">
       <div className="max-w-7xl mx-auto w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-10">
+          <div className="space-y-10 text-center lg:text-left">
             <h1 className="text-5xl md:text-7xl font-bold text-[#ADFF2F] text-balance leading-tight">
               Your marketing is just one leap away.
             </h1>
             <p className="text-[#CCE6CC] text-xl text-balance">
               Creating high-performing, sophisticated marketing campaigns that stand at the forefront of the digital realm.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <Button 
                 className="bg-[#ADFF2F] text-[#0B1410] hover:bg-[#ADFF2F]/90 px-8 py-7 text-xl rounded-full relative overflow-hidden group"
                 onClick={() => window.open('https://calendly.com/hello-marketingfrog/marketing-frog-30-minute-consultation', '_blank')}
@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                 See Our Work
               </Button>
             </div>
-            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#CCE6CC]">
+            <div className="flex flex-wrap items-center gap-6 pt-6 text-lg text-[#CCE6CC] justify-center lg:justify-start">
               <span className="font-space-grotesk font-bold">Trusted by</span>
               <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.2s', animationFillMode: 'forwards' }}>MuchMagic</span>
               <span className="animate-fade-in opacity-0" style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}>Bank in Georgia</span>
