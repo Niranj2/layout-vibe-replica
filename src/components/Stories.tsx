@@ -43,7 +43,7 @@ const Stories: React.FC = () => {
             description="MuchMagic partnered with us to elevate their global brand presence. Through a complete rebrand—including a refined website, messaging strategy, and visual identity—we helped them project the confidence and clarity needed to connect with international clients."
             author="Global Consulting"
             image="/lovable-uploads/48fcd1d7-6800-4cfb-a29b-d75f3b31cd2f.png"
-            link="https://sobhanajm.com/"
+            link="https://muchmagic.netlify.app/"
             color="bg-purple-500/10"
             titleColor="text-[#17AABE]"
           />
