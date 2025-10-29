@@ -1,12 +1,8 @@
 
 import React, { useEffect, useState } from 'react';
 import MobileNav from './MobileNav';
-import { Button } from './ui/button';
-import { Sun, Moon } from 'lucide-react';
-import { useTheme } from '../hooks/useTheme';
 
 const Header: React.FC = () => {
-  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -63,15 +59,6 @@ const Header: React.FC = () => {
             </ul>
           </nav>
           <div className="flex items-center gap-4 ml-6">
-            <Button 
-              variant="ghost" 
-              size="icon" 
-              onClick={toggleTheme} 
-              className="rounded-full text-primary hover:bg-accent/10"
-              aria-label={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
-            >
-              {theme === 'dark' ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </Button>
             <MobileNav />
           </div>
         </div>

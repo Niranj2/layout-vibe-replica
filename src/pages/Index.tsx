@@ -39,9 +39,6 @@ const Index: React.FC = () => {
       el.addEventListener('mouseout', handleMouseOut);
     });
     
-    // Apply dark theme by default
-    document.documentElement.classList.add('dark');
-    
     // Cleanup
     return () => {
       document.removeEventListener('mousemove', moveCursor);
