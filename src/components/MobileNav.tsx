@@ -33,7 +33,15 @@ const MobileNav: React.FC = () => {
       setIsOpen(false);
       
       // Wait for the menu to close, then scroll
-      scrollToElement(targetId, 200);
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 200);
     } else {
       // If no valid target, just close the menu
       setIsOpen(false);
@@ -69,31 +77,31 @@ const MobileNav: React.FC = () => {
               <li>
                 <a 
                   href="#services" 
-                  className="text-4xl font-space-grotesk font-bold text-primary hover:text-neon-lime transition-colors flex items-center justify-between group"
+                  className="text-4xl font-space-grotesk font-bold text-primary flex items-center justify-between cursor-pointer"
                   onClick={handleLinkClick}
                 >
                   <span>Services</span>
-                  <ArrowRight className="h-6 w-6 transform group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-6 w-6" />
                 </a>
               </li>
               <li>
                 <a 
                   href="#stories" 
-                  className="text-4xl font-space-grotesk font-bold text-primary hover:text-neon-lime transition-colors flex items-center justify-between group"
+                  className="text-4xl font-space-grotesk font-bold text-primary flex items-center justify-between cursor-pointer"
                   onClick={handleLinkClick}
                 >
                   <span>Success Stories</span>
-                  <ArrowRight className="h-6 w-6 transform group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-6 w-6" />
                 </a>
               </li>
               <li>
                 <a 
                   href="#contact" 
-                  className="text-4xl font-space-grotesk font-bold text-primary hover:text-neon-lime transition-colors flex items-center justify-between group"
+                  className="text-4xl font-space-grotesk font-bold text-primary flex items-center justify-between cursor-pointer"
                   onClick={handleLinkClick}
                 >
                   <span>Contact</span>
-                  <ArrowRight className="h-6 w-6 transform group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight className="h-6 w-6" />
                 </a>
               </li>
             </ul>

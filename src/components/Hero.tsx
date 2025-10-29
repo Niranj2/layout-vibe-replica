@@ -60,7 +60,17 @@ const Hero: React.FC = () => {
       </div>
       
       <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
-        <a href="#services" className="flex flex-col items-center text-primary hover:text-neon-lime transition-colors">
+        <a 
+          href="#services" 
+          onClick={(e) => {
+            e.preventDefault();
+            const element = document.getElementById('services');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+          }}
+          className="flex flex-col items-center text-primary cursor-pointer"
+        >
           <span className="mb-2 text-sm">Explore</span>
           <ArrowDown className="h-6 w-6" />
         </a>

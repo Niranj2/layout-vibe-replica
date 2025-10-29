@@ -34,8 +34,14 @@ const Header: React.FC = () => {
               <li>
                 <a 
                   href="#services" 
-                  onClick={(e) => handleNavigationClick(e)}
-                  className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById('services');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="text-primary cursor-pointer"
                 >
                   Services
                 </a>
@@ -43,8 +49,14 @@ const Header: React.FC = () => {
               <li>
                 <a 
                   href="#stories" 
-                  onClick={(e) => handleNavigationClick(e)}
-                  className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById('stories');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }
+                  }}
+                  className="text-primary cursor-pointer"
                 >
                   Success Stories
                 </a>
