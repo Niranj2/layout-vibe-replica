@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import MobileNav from './MobileNav';
+import { handleNavigationClick } from '@/lib/scrollUtils';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,6 +34,7 @@ const Header: React.FC = () => {
               <li>
                 <a 
                   href="#services" 
+                  onClick={(e) => handleNavigationClick(e)}
                   className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
                 >
                   Services
@@ -41,6 +43,7 @@ const Header: React.FC = () => {
               <li>
                 <a 
                   href="#stories" 
+                  onClick={(e) => handleNavigationClick(e)}
                   className="text-primary hover:text-neon-lime transition-colors relative after:content-[''] after:absolute after:left-0 after:bottom-[-5px] after:h-[2px] after:w-0 after:bg-neon-lime hover:after:w-full after:transition-all"
                 >
                   Success Stories

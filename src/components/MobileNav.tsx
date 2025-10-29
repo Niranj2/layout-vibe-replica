@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import { scrollToElement } from '@/lib/scrollUtils';
 
 const MobileNav: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,20 +28,12 @@ const MobileNav: React.FC = () => {
     const href = e.currentTarget.getAttribute('href');
     if (href && href.startsWith('#')) {
       const targetId = href.substring(1);
-      const targetElement = document.getElementById(targetId);
       
-      if (targetElement) {
-        // Close the menu first
-        setIsOpen(false);
-        
-        // Wait for the menu to close, then scroll
-        setTimeout(() => {
-          targetElement.scrollIntoView({ 
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }, 150);
-      }
+      // Close the menu first
+      setIsOpen(false);
+      
+      // Wait for the menu to close, then scroll
+      scrollToElement(targetId, 200);
     } else {
       // If no valid target, just close the menu
       setIsOpen(false);
