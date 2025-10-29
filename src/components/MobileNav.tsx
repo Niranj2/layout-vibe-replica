@@ -22,18 +22,28 @@ const MobileNav: React.FC = () => {
 
   const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    setIsOpen(false);
     
     // Get the target section and scroll to it
     const href = e.currentTarget.getAttribute('href');
     if (href && href.startsWith('#')) {
       const targetId = href.substring(1);
       const targetElement = document.getElementById(targetId);
+      
       if (targetElement) {
+        // Close the menu first
+        setIsOpen(false);
+        
+        // Wait for the menu to close, then scroll
         setTimeout(() => {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
+          targetElement.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }, 150);
       }
+    } else {
+      // If no valid target, just close the menu
+      setIsOpen(false);
     }
   };
 
