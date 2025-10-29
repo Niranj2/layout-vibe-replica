@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
       
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-8 left-0 right-0 flex justify-center animate-bounce">
         <a href="#services" className="flex flex-col items-center text-primary hover:text-neon-lime transition-colors">
           <span className="mb-2 text-sm">Explore</span>
           <ArrowDown className="h-6 w-6" />
