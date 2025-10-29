@@ -23,11 +23,33 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
   color = 'bg-neon-lime/10', // Default color
   titleColor = 'text-neon-lime' // Default title color
 }) => {
+  const handleClick = (e: React.MouseEvent) => {
+    if (link) {
+      e.preventDefault();
+      // Small delay to ensure the click is registered
+      setTimeout(() => {
+        window.open(link, '_blank', 'noopener,noreferrer');
+      }, 50);
+    }
+  };
+
   const CardWrapper = ({ children }: { children: React.ReactNode }) => {
     return link ? (
-      <a href={link} target="_blank" rel="noopener noreferrer" className="block">
+      <div 
+        onClick={handleClick}
+        className="block cursor-pointer"
+        role="button"
+        tabIndex={0}
+        onKeyDown={(e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            handleClick(e as any);
+          }
+        }}
+        aria-label={`View ${title} case study`}
+      >
         {children}
-      </a>
+      </div>
     ) : (
       <>{children}</>
     );
@@ -36,8 +58,7 @@ const SuccessStory: React.FC<SuccessStoryProps> = ({
   return (
     <CardWrapper>
       <Card 
-        className={`h-full flex flex-col bg-card overflow-hidden animate-slide-up opacity-0 glassmorphism border-white/10 group transition-all duration-300 ease-in-out ${link ? 'cursor-pointer' : ''} hover:translate-y-[-5px] hover:shadow-lg`} 
-        style={{ animationDelay: '0.3s', animationFillMode: 'forwards' }}
+        className={`h-full flex flex-col bg-card overflow-hidden glassmorphism border-white/10 group transition-all duration-300 ease-in-out ${link ? 'cursor-pointer' : ''} hover:translate-y-[-5px] hover:shadow-lg`} 
       >
         <div className="grid md:grid-cols-3 h-full items-start">
           <div className="md:col-span-1 overflow-hidden relative flex items-center justify-center md:h-full">
